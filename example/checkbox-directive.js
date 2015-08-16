@@ -44,7 +44,6 @@ angular.module('sb.checkbox', [])
 				size: scope.size || 'small',
 				showLabel: true
 			};
-			console.log(iconSizeClasses['small']);
 			var iconSizeClass = scope.checkboxModel.size.toLowerCase();
 			if(iconSizeClass == 'small' || iconSizeClass == 'medium' || iconSizeClass == 'large') {
 				scope.checkboxModel.iconFontSize = iconSizeClasses[scope.checkboxModel.size.toLowerCase()]
