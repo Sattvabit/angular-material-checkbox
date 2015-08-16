@@ -1,0 +1,24 @@
+{
+  "name": "angular-material-checkbox",
+  "version": "0.0.1",
+  "authors": [
+    "sattvabit@gmail.com"
+  ],
+  "description": "Simple angular checkbox directive using Google material design icons",
+  "main": "checkbox-directive.js",
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "homepage": "http://sattvabit.com/angular-material-checkbox",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.28"
+  }
+}

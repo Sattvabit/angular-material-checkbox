@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<!-- IE 7 support -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Example of Checkbox Usage</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script type="text/javascript" src="../checkbox-directive.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+	</head>
+	<body>
+		<!-- Used as attribute to support <IE9 versions -->
+		<div sb-checkbox label="test1" show-label="true" ng-model="user.test1" size="medium"></div>
+		<span> value1: {{user.test1}} </span>
+		<!-- <sb-checkbox
+		  label="test1"
+		  show-label="true"
+		  ng-model="user.test1"
+		  size="medium">
+		</sb-checkbox>
+		<span> value1: {{user.test1}}</span>
+		<sb-checkbox
+		  label="Test 2"
+		  ng-model="test2"
+		  show-label="false"
+		  pre-selected="true"
+		>
+		</sb-checkbox> -->
+		<!-- <span> value2: {{test2}}</span> -->
+	</body>
+</html>
