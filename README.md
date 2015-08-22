@@ -38,7 +38,7 @@ As an element(For newer HTML5 browsers):
 ```
 As an attribute(If you want to support older IE, also use angular 1.2.8):
 ```html
-<!-- Used as attribute to support <IE9 versions -->
+<!-- Used as attribute to support <=IE9 versions -->
 <div sb-checkbox label="test labrl"
 	 			 ng-model="user.test1">
 </div>
