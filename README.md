@@ -24,7 +24,7 @@ Then add following line in your index.html head section:
 
 Also add the angular-material-checkbox module to your Angular App file, e.g.
 ```js
-var app = angular.module('app', ["angular-material-checkbox"]);
+var app = angular.module('app', ['sb.checkbox']);
 ```
 ### Usage(With minimum options)
 
