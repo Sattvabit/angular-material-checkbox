@@ -48,8 +48,8 @@ As an attribute(If you want to support older IE, also use angular 1.2.8):
 | Attribute        | Description           | Required | Example  |
 | :------------- |:-------------| :-----:| :-----|
 | ng-model | model of checkbox | Yes | choices.checkbox1 |
-| checked-icon-name | [Google material design icon](https://www.google.com/design/icons/) name for checked state | No | check_circle, check_box_outline_blank OR '&amp;#xE86C;' , '&amp;##xE835;' (For IE 9 or below)|
-| unchecked-icon-name | [Google material design icon](https://www.google.com/design/icons/) name for unchecked state | No | radio_button_unchecked, check_box OR '&amp;##xE836;' , '&amp;##xE834;' (For IE 9 or below)|
+| checked-icon-name | [Google material design icon](https://www.google.com/design/icons/) name for checked state | No | check_circle, check_box_outline_blank OR '&amp;#xE86C;' , '&amp;#xE835;' (For IE 9 or below)|
+| unchecked-icon-name | [Google material design icon](https://www.google.com/design/icons/) name for unchecked state | No | radio_button_unchecked, check_box OR '&amp;#xE836;' , '&amp;#xE834;' (For IE 9 or below)|
 | checked-icon-color | Icon color in hex for checked state | No | '#009688' |
 | unchecked-icon-color | Icon color in hex for unchecked state | No | '#B2DFDB' |
 | size | size of checkbox | No | small, medium or large |
