@@ -46,11 +46,9 @@ angular.module('sb.checkbox', [])
 			};
 			console.log(iconSizeClasses['small']);
 			var iconSizeClass = scope.checkboxModel.size.toLowerCase();
-			if(iconSizeClass == 'small' || iconSizeClass == 'medium' || iconSizeClass == 'large')
-			scope.checkboxModel.iconFontSize = iconSizeClasses[scope.checkboxModel.size.toLowerCase()]
-			
-
-
+			if(iconSizeClass == 'small' || iconSizeClass == 'medium' || iconSizeClass == 'large') {
+				scope.checkboxModel.iconFontSize = iconSizeClasses[scope.checkboxModel.size.toLowerCase()];
+			}
 			if(scope.showLabel == 'false') {
 				scope.checkboxModel.showLabel = false;
 			}
