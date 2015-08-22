@@ -1,3 +1,12 @@
+/* @preserve
+ *
+ * angular-material-checkbox
+ * https://github.com/Sattvabit/angular-material-checkbox
+ *
+ * Version: 0.0.1 - 08/22/2015
+ * License: MIT
+ * Credits: sattvabitinc & contributors
+ */
 angular.module('sb.checkbox', [])
 .constant('iconSizeClasses', {
     small: '24px',
