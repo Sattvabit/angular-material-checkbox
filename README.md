@@ -8,7 +8,7 @@ Demo : coming soon
 * Shows just a checkbox or checkbox with inline label
 * Label is also clikable if used
 * Older IE(tested in IE 7+) support if icons used in specific way
-* Easy to use & fully custmizable
+* Easy to use & fully customizable
 
 ### Getting Started
 Download the package, and include the `/checkbox-directive.js` file in your page.
