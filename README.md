@@ -1,7 +1,7 @@
 # angular-material-checkbox
 Simple angular check-box directive using Google material design [icons](https://www.google.com/design/icons/).
 
-Demo : coming soon
+[Click Here](http://www.sattvabit.com/angular-material-checkbox/) for demo.
 
 ###Key Features
 * Uses Google material font icons to show checkbox
