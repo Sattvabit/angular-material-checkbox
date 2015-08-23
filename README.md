@@ -44,6 +44,7 @@ As an attribute(If you want to support older IE, also use angular 1.2.8):
 </div>
 <span> model value: {{user.test1}} </span>
 ```
+NOTE: 'sb-checkbox' class is added in check-box container <div> you can override it to apply custom css.
 ### Description of attributes
 | Attribute        | Description           | Required | Example  |
 | :------------- |:-------------| :-----:| :-----|
