@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>angular-material-checkbox by Sattvabit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">angular-material-checkbox</h1>
+      <h2 class="project-tagline">Simple angular check-box directive using Google material design icons.</h2>
+      <a href="https://github.com/Sattvabit/angular-material-checkbox" class="btn">View on GitHub</a>
+      <a href="https://github.com/Sattvabit/angular-material-checkbox/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/Sattvabit/angular-material-checkbox/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="angular-material-checkbox" class="anchor" href="#angular-material-checkbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>angular-material-checkbox</h1>
+
+<p>Simple angular check-box directive using Google material design <a href="https://www.google.com/design/icons/">icons</a>.</p>
+
+<p>Demo : coming soon</p>
+
+<h3>
+<a id="key-features" class="anchor" href="#key-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Features</h3>
+
+<ul>
+<li>Uses Google material font icons to show checkbox</li>
+<li>Shows just a checkbox or checkbox with inline label</li>
+<li>Label is also clikable if used</li>
+<li>Older IE(tested in IE 7+) support if icons used in specific way</li>
+<li>Easy to use &amp; fully custmizable</li>
+</ul>
+
+<h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting Started</h3>
+
+<p>Download the package, and include the <code>/checkbox-directive.js</code> file in your page.</p>
+
+<div class="highlight highlight-bash"><pre>bower install angular-material-checkbox --save</pre></div>
+
+<p>Then add following line in your index.html head section:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">link</span> <span class="pl-e">href</span>=<span class="pl-s"><span class="pl-pds">"</span>https://fonts.googleapis.com/icon?family=Material+Icons<span class="pl-pds">"</span></span> <span class="pl-e">rel</span>=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span>&gt;</pre></div>
+
+<p>Also add the <code>sb.checkbox</code> to your Angular App file, e.g.</p>
+
+<div class="highlight highlight-js"><pre><span class="pl-k">var</span> app <span class="pl-k">=</span> angular.<span class="pl-c1">module</span>(<span class="pl-s"><span class="pl-pds">'</span>app<span class="pl-pds">'</span></span>, [<span class="pl-s"><span class="pl-pds">'</span>sb.checkbox<span class="pl-pds">'</span></span>]);</pre></div>
+
+<h3>
+<a id="usagewith-minimum-options" class="anchor" href="#usagewith-minimum-options" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage(With minimum options)</h3>
+
+<p>As an element(For newer HTML5 browsers):</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">sb</span><span class="pl-e">-checkbox</span>
+    <span class="pl-e">label</span>=<span class="pl-s"><span class="pl-pds">"</span>test label<span class="pl-pds">"</span></span>
+    <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>user.test1<span class="pl-pds">"</span></span>
+ /&gt;
+&lt;<span class="pl-ent">span</span>&gt; model value: {{user.test1}} &lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+
+<p>As an attribute(If you want to support older IE, also use angular 1.2.8):</p>
+
+<div class="highlight highlight-html"><pre><span class="pl-c">&lt;!-- Used as attribute to support &lt;=IE9 versions --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">sb-checkbox</span> <span class="pl-e">label</span>=<span class="pl-s"><span class="pl-pds">"</span>test labrl<span class="pl-pds">"</span></span>
+                 <span class="pl-e">ng-model</span>=<span class="pl-s"><span class="pl-pds">"</span>user.test1<span class="pl-pds">"</span></span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">span</span>&gt; model value: {{user.test1}} &lt;/<span class="pl-ent">span</span>&gt;</pre></div>
+
+<p>NOTE: <code>sb-checkbox</code> class is added in check-box container <code>div</code> you can override it to apply custom css.</p>
+
+<h3>
+<a id="description-of-attributes" class="anchor" href="#description-of-attributes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Description of attributes</h3>
+
+<table>
+<thead>
+<tr>
+<th align="left">Attribute</th>
+<th align="left">Description</th>
+<th align="center">Required</th>
+<th align="left">Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ng-model</td>
+<td align="left">model of checkbox</td>
+<td align="center">Yes</td>
+<td align="left">choices.checkbox1</td>
+</tr>
+<tr>
+<td align="left">checked-icon-name</td>
+<td align="left">
+<a href="https://www.google.com/design/icons/">Google material design icon</a> name for checked state</td>
+<td align="center">No</td>
+<td align="left">check_circle, check_box_outline_blank OR '&amp;#xE86C;' , '&amp;#xE835;' (For IE 9 or below)</td>
+</tr>
+<tr>
+<td align="left">unchecked-icon-name</td>
+<td align="left">
+<a href="https://www.google.com/design/icons/">Google material design icon</a> name for unchecked state</td>
+<td align="center">No</td>
+<td align="left">radio_button_unchecked, check_box OR '&amp;#xE836;' , '&amp;#xE834;' (For IE 9 or below)</td>
+</tr>
+<tr>
+<td align="left">checked-icon-color</td>
+<td align="left">Icon color in hex for checked state</td>
+<td align="center">No</td>
+<td align="left">'#009688'</td>
+</tr>
+<tr>
+<td align="left">unchecked-icon-color</td>
+<td align="left">Icon color in hex for unchecked state</td>
+<td align="center">No</td>
+<td align="left">'#B2DFDB'</td>
+</tr>
+<tr>
+<td align="left">size</td>
+<td align="left">size of checkbox</td>
+<td align="center">No</td>
+<td align="left">small, medium or large</td>
+</tr>
+<tr>
+<td align="left">pre-selected</td>
+<td align="left">if 'true' checkbox will be selected at start, defaults to false</td>
+<td align="center">No</td>
+<td align="left">true OR false</td>
+</tr>
+<tr>
+<td align="left">show-label</td>
+<td align="left">Don't show label  if false, defaults to true</td>
+<td align="center">No</td>
+<td align="left">true OR false</td>
+</tr>
+</tbody>
+</table>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/Sattvabit/angular-material-checkbox">angular-material-checkbox</a> is maintained by <a href="https://github.com/Sattvabit">Sattvabit</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
