@@ -11,7 +11,7 @@ Demo : coming soon
 * Easy to use & fully custmizable
 
 ### Getting Started
-Download the package, and include the /checkbox-directive.js file in your page.
+Download the package, and include the `/checkbox-directive.js` file in your page.
 
 ```bash
 bower install angular-material-checkbox --save
@@ -22,7 +22,7 @@ Then add following line in your index.html head section:
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
-Also add the angular-material-checkbox module to your Angular App file, e.g.
+Also add the `sb.checkbox` to your Angular App file, e.g.
 ```js
 var app = angular.module('app', ['sb.checkbox']);
 ```
@@ -44,7 +44,7 @@ As an attribute(If you want to support older IE, also use angular 1.2.8):
 </div>
 <span> model value: {{user.test1}} </span>
 ```
-NOTE: 'sb-checkbox' class is added in check-box container 'div' you can override it to apply custom css.
+NOTE: `sb-checkbox` class is added in check-box container `div` you can override it to apply custom css.
 ### Description of attributes
 | Attribute        | Description           | Required | Example  |
 | :------------- |:-------------| :-----:| :-----|
