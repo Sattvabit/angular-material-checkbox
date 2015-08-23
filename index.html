@@ -1,13 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en-us" ng-app="myApp">
   <head>
     <meta charset="UTF-8">
     <title>angular-material-checkbox by Sattvabit</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="bower_components/angular-material-checkbox/checkbox-directive.js"></script>
+    <script type="text/javascript" src="app.js"></script>
   </head>
   <body>
     <section class="page-header">
@@ -24,8 +28,26 @@
 
 <p>Simple angular check-box directive using Google material design <a href="https://www.google.com/design/icons/">icons</a>.</p>
 
-<p>Demo : coming soon</p>
-
+<p><strong>Demo:&nbsp;</strong><a href="demo.html">(Stand Alone Demo)</a>
+</p>
+    <div sb-checkbox label="round default" ng-model="choices.medium1" size="medium"></div>
+    <!-- medium custom -->
+    <div sb-checkbox label="square custom"
+      ng-model="choices.cmedium1"
+      checked-icon-name="&#xE834;"
+      unchecked-icon-name="&#xE835;"
+      checked-icon-color="#689F38"
+      unchecked-icon-color="#DCEDC8"
+      pre-selected="true"
+      size="medium"></div>
+      <div sb-checkbox label="heart custom"
+      ng-model="choices.cmedium1"
+      checked-icon-name="&#xE87D;"
+      unchecked-icon-name="&#xE87E;"
+      checked-icon-color="#D32F2F"
+      unchecked-icon-color="#FFCDD2"
+      pre-selected="true"
+      size="medium"></div>
 <h3>
 <a id="key-features" class="anchor" href="#key-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Key Features</h3>
 
@@ -34,7 +56,7 @@
 <li>Shows just a checkbox or checkbox with inline label</li>
 <li>Label is also clikable if used</li>
 <li>Older IE(tested in IE 7+) support if icons used in specific way</li>
-<li>Easy to use &amp; fully custmizable</li>
+<li>Easy to use &amp; fully customizable</li>
 </ul>
 
 <h3>
