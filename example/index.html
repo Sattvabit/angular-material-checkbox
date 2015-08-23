@@ -9,27 +9,85 @@
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script type="text/javascript" src="../checkbox-directive.js"></script>
 		<script type="text/javascript" src="app.js"></script>
+		<style type="text/css">
+			.container {
+				width: 320px;
+				margin: 0 auto;
+				background-color: #FFF;
+				text-align: center;
+			}
+			.sb-checkbox {
+				text-align: left;
+				padding: 5px;
+				border-bottom: solid 1px #CCC;
+				background-color: #F0F0F0;
+			}
+		</style>
 	</head>
 	<body>
-		<!-- Used as attribute to support <IE9 versions -->
-		<div sb-checkbox label="test label 1" show-label="true" ng-model="user.test1" size="medium"></div>
-		<div sb-checkbox label="test label 2" show-label="true" ng-model="user.test2" size="medium"></div>
-		<div> <strong>model 1 value:</strong> {{user.test1}} </div>
-		<div> <strong>model 2 value:</strong> {{user.test2}} </div>
-		<!-- <sb-checkbox
-		  label="test1"
-		  show-label="true"
-		  ng-model="user.test1"
-		  size="medium">
-		</sb-checkbox>
-		<span> value1: {{user.test1}}</span>
-		<sb-checkbox
-		  label="Test 2"
-		  ng-model="test2"
-		  show-label="false"
-		  pre-selected="true"
-		>
-		</sb-checkbox> -->
-		<!-- <span> value2: {{test2}}</span> -->
+		<!-- Used as attribute to support <=IE9 versions -->
+		<div class="container">
+			<!-- small -->
+			<p>
+				<strong>Small:</strong>
+			</p>
+			<div sb-checkbox label="test label 1" ng-model="choices.small1" size="small"></div>
+			<div sb-checkbox label="test label 2" ng-model="choices.small2" size="small"></div>
+			<div> <strong>model 1 value:</strong> {{choices.small1}} </div>
+			<div> <strong>model 2 value:</strong> {{choices.small2}} </div>
+			<p>
+				<strong>Medium:</strong>
+			</p>
+			<!-- medium -->
+			<div sb-checkbox label="test label 1" ng-model="choices.medium1" size="medium"></div>
+			<div sb-checkbox label="test label 2" ng-model="choices.medium2" size="medium"></div>
+			<div> <strong>model 1 value:</strong> {{choices.medium1}} </div>
+			<div> <strong>model 2 value:</strong> {{choices.medium2}} </div>
+			<p>
+				<strong>Large:</strong>
+			</p>
+			<!-- large -->
+			<div sb-checkbox label="test label 1" ng-model="choices.large1" size="large"></div>
+			<div sb-checkbox label="test label 2" ng-model="choices.large2" size="large"></div>
+			<div> <strong>model 1 value:</strong> {{choices.large1}} </div>
+			<div> <strong>model 2 value:</strong> {{choices.large2}} </div>
+
+			<p>
+				<strong>Medium:(using sqaure icons/custom color/first preselected)</strong>
+			</p>
+			<!-- medium custom -->
+			<div sb-checkbox label="test label 1"
+				ng-model="choices.cmedium1"
+				checked-icon-name="&#xE834;"
+				unchecked-icon-name="&#xE835;"
+				checked-icon-color="#C2185B"
+				unchecked-icon-color="#F8BBD0"
+				pre-selected="true"
+				size="medium"></div>
+			<div sb-checkbox label="test label 2"
+				ng-model="choices.cmedium2"
+				checked-icon-name="&#xE834;"
+				unchecked-icon-name="&#xE835;"
+				checked-icon-color="#C2185B"
+				unchecked-icon-color="#F8BBD0" 
+				size="medium"></div>
+			<div> <strong>model 1 value:</strong> {{choices.cmedium1}} </div>
+			<div> <strong>model 2 value:</strong> {{choices.cmedium2}} </div>
+			<!-- can be used as element in newer browsers-->
+			<!-- <sb-checkbox
+			  label="test1"
+			  show-label="true"
+			  ng-model="choices.test1"
+			  size="medium">
+			</sb-checkbox>
+			<span> value1: {{choices.test1}}</span>
+			<sb-checkbox
+			  label="Test 2"
+			  ng-model="test2"
+			  show-label="false"
+			  pre-selected="true"
+			>
+			</sb-checkbox> -->
+		</div>
 	</body>
 </html>
