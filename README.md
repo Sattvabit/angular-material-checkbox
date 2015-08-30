@@ -4,9 +4,9 @@ Simple angular check-box directive using Google material design [icons](https://
 [Click Here](http://www.sattvabit.com/angular-material-checkbox/) for demo.
 
 ###Key Features
-* Uses Google material font icons to show checkbox
+* Uses Google material font icons to show checkbox in div
 * Shows just a checkbox or checkbox with inline label
-* Label is also clikable if used
+* Label is also clickable
 * Older IE(tested in IE 7+) support if icons used in specific way
 * Easy to use & fully customizable
 
