@@ -1,5 +1,5 @@
 # angular-material-checkbox
-Simple angular check-box directive using Google material design [icons](https://www.google.com/design/icons/).
+Simple angular check-box/toggle button directive using Google material design [icons](https://www.google.com/design/icons/).
 
 [Click Here](http://www.sattvabit.com/angular-material-checkbox/) for demo.
 
