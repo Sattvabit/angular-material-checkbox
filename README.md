@@ -16,7 +16,7 @@ Download the package, and include the `/checkbox-directive.js` file in your page
 ```bash
 bower install angular-material-checkbox --save
 ```
-Then add material icons with following line in your index.html head section:
+Then add material icons with following line in your `index.html` head section:
 
 ```html
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
