@@ -1,3 +1,5 @@
+_Archived. This library was built for AngularJS 1.x and is no longer maintained. Kept public for historical reference._
+
 # angular-material-checkbox
 Simple angular check-box/toggle button directive using Google material design [icons](https://www.google.com/design/icons/).
 
